@@ -1,0 +1,149 @@
+<html>
+    <head>
+
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+            <style>
+                    /*this block should go in the styles.css file*/
+                    .ui-panel-inner {
+                        padding:0px; /*make the buttons flush edge to edge*/
+                    }
+                    .ui-controlgroup {
+                        margin:0; /*make the buttons flush to the top*/
+                    }
+                    #header {
+                        height:54px;
+                    }
+                    #bars-button {
+                        margin:7px;
+                    }
+                </style>    
+
+    </head>
+
+
+    <body>
+
+        <div data-role="page" data-theme ="a">
+            <div data-role="header" data-position="fixed">
+
+                <h1> My first Page </h1>
+
+                <a href="#"> Home </a>
+            </div>
+
+            <div data-role="navbar">
+                    <ul>
+                    
+                        <li> <a data-icon="search" href="#" class="ui-button-active"> Search </a></li>
+
+                        
+                        <li> <a data-icon="arrow-r" href="#"> Home </a></li>
+
+                    </ul>
+
+                </div>
+
+            <div data-role="main" class="ui-content">
+                <a href="#pagetwo"> Check Mobile-SliderMenu-Part2 of Assignment ->  </a>
+                <h1> Welcome to XYZ Registration Form </h1>
+                <p> Fill Form </p>
+
+                <form action="#" method = "get">
+
+                    <label for ="firstname"> FirstName </label>
+                    <input type="text"  name="firstName" value= "" id="firstName"/>
+
+                    <label for ="lastname"> LastName </label>
+                    <input type="text"  name="lastName" value= "" id="lastName"/>
+
+                    <label for ="gender"> Gender </label>
+                    <select id ="gender" name="gender">
+                        <option value="Male"> Male </option>
+                        <option value="female"> Female </option>
+                        <option value="other"> Other</option>
+
+                    </select>
+
+                    <label for ="age"> Age: </label>
+                    <input type="range" name="age" id="age" max="120" min ="13" value="" />
+
+
+                    <label for="pets"> Pets </label>
+                    <input type= "checkbox" id="dog" name="dog" />
+                    <label for = "dog"> Dog </label>
+                    
+                    <input type= "checkbox" id="cat" name="cat" />
+                    <label for = "cat"> Cat </label>
+
+                    <input type= "checkbox" id="fish" name="fish" />
+                    <label for = "fish"> Fish </label>
+
+                    <input type= "checkbox" id="rabbit" name="rabbit" />
+                    <label for = "rabbit"> Rabbit </label>
+
+                    <label for ="siblings">  Do you have Siblings? </label>
+                    <select name="siblings" id = siblings data-role= "slider">
+                        <option value="Yes"> Yes </option>
+                        <option value="No"> No </option>
+
+                    </select>
+
+
+                    <labe for = "house"> Where do you live </label>
+
+                    <input type="radio" id = "house" name="home" />
+                    <label for ="house"> House </label>
+
+                    <input type="radio" id = "condo" name="home" />
+                    <label for ="condo"> Condo </label>
+
+                    <input type="radio" id = "apartment" name="home" />
+                    <label for ="apartment"> Apartment </label>
+
+
+                    <div>
+
+                        <input type="submit"  value= "Submit Form" />
+                    </div>
+                </form>
+
+               
+            </div>
+
+            <div data-role="footer">
+                <h2> &copyright</h2>
+                
+            </div>
+
+
+        </div>
+
+        <div data-role="page" id="pagetwo" data-theme="b">
+
+            <h1> Hello welcome to XYZ Website </h1>
+            <div data-role="panel" id="navpanel" data-theme="a" data-display="overlay" data-position="right">
+
+            <div data-role="control-group" data-corners="false">
+
+                <a href="#" data-role="button"> Business </a>
+                <a href="#" data-role="button"> Numbers </a>
+                <a href="#" data-role="button"> Money </a>
+                <a href="#" data-role="button"> People </a>
+            </div>
+            </div>
+
+            <div id="header" data-role = "header" data-theme ="b">
+
+                <a id ="bars-button" data-icon="bars" class="ui-btn-right" style="margin-top:10px;" href="#navpanel"> Menu </a>
+            </div>
+         </div>
+
+
+    </body>
+
+
+
+</html>
